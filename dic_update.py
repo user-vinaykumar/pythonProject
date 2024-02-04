@@ -1,6 +1,6 @@
 student = {'name':'vinay', 'subject':'CompSci', 'age':26}
 
-student['name'] = 'sharan'
+student['name'] = 'sharan'  # re-initializing
 
 print(student)
 
