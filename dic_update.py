@@ -1,4 +1,4 @@
-student = {'name':'vinay', 'subject':'CompSci', 'age':26}
+student = {'name': 'vinay', 'subject': 'CompSci', 'age': 26}
 
 student['name'] = 'sharan'  # re-initializing
 

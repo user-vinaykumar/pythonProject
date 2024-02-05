@@ -1,4 +1,4 @@
-student = {'name':'vinay', 'place':'mandya', 'age':27, 'subject':'Math'}
+student = {'name' : 'vinay', 'place' : 'mandya', 'age' : 27, 'subject' : 'Math'}
 
 student.pop('age')
 

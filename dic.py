@@ -5,4 +5,3 @@ print(students)
 print(students['name'])  # prints the value of the key
 
 print(students['courses'])
-
