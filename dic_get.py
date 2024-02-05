@@ -1,6 +1,6 @@
 student = {'name': 'vinay', 'age':26, 'subject':'CompSci'}
 
-print(student.get('name'))
+print(student.get('name'))  # prints the value of the key we provide in argument.
 
 print(student.get('age'))
 
