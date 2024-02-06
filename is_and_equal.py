@@ -8,3 +8,10 @@ print(a is b)  # does not belong to same memory location. both are different obj
 print(id(a))
 print(id(b))
 
+a1 = [2,3,4]
+b1 = a1
+
+print(id(a1))
+print(id(b1))
+
+print(a1 == b1)
