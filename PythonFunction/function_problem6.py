@@ -9,7 +9,7 @@ def dicDecomposer(item):
 
     print(f'Keys of the dictionary are : {keyList}')
 
-    newDictionary = {j : k for k, j in item.items()}
+    newDictionary = {j: k for k, j in item.items()}
 
     for y in newDictionary:
         valueList.append(y)
@@ -17,9 +17,4 @@ def dicDecomposer(item):
     print(f'Values of dictionary are : {valueList}')
 
 
-dicDecomposer({'one' : 1, 'two' : 2, 'three' : 3, 'four' : 4})
-
-
-
-
-
+dicDecomposer({'one': 1, 'two': 2, 'three': 3, 'four': 4})
