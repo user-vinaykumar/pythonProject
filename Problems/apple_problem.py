@@ -12,3 +12,19 @@ def occurr(item):
 
 occurr([1,2])
 '''
+
+def occur(item):
+    s = {}
+    k = set()
+
+    for i in item:
+        s[i] = s.get(i,0) + 1
+    for j in s.values():
+        k.add(j)
+    if len(s.values()) == len(k):
+        return True
+    else:
+        return False
+
+
+print(occur([1,2,2,1,3]))
