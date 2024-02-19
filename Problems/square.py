@@ -5,4 +5,5 @@ def square():
         print('****')
         pass
 
+
 square()
