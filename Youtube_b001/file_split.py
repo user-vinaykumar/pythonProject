@@ -8,6 +8,7 @@ full_files = ['info.txt',
               'image2.jpg',
               'info.3.txt']
 
+
 # print without their extension
 
 def splitFilesByExtension(item):
@@ -23,6 +24,7 @@ def splitFilesByExtension(item):
 
 print('-------------------------')
 
+
 # second way of doing this
 
 def splitFile(item):
@@ -31,8 +33,4 @@ def splitFile(item):
         print(FullFileName)
 
 
-
 splitFile(full_files)
-
-
-
