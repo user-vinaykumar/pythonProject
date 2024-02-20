@@ -7,6 +7,7 @@ def mergeLists(item1, item2):
     set1 = set(item1)
     set2 = set(item2)
     sets = set1.union(set2)
-    return sets
+    sortedSet = sorted(sets)
+    return sortedSet
 
 print(mergeLists(list1, list2))
