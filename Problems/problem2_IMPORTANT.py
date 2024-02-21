@@ -15,8 +15,8 @@ def mergeTwoDictionaries(item, wood):
     set1 = set(item)
     set2 = set(wood)
     set3 = set1.union(set2)
-    newlist = {k: item.get(k, 0) + wood.get(k, 0) for k in set3}
-    return newlist
+    newDictionary = {k: item.get(k, 0) + wood.get(k, 0) for k in set3}
+    return newDictionary
 
 
 print(mergeTwoDictionaries(inv, loot))
