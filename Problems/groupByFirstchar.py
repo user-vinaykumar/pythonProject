@@ -6,8 +6,7 @@ employee = ['sam', 'sarah', 'max', 'aria', 'mike', 'aaron']
 
 employee.sort()
 
-employee_group = groupby(employee, key= lambda n : n[0])
+employee_group = groupby(employee, key=lambda n: n[0])
 
 for key, group in employee_group:
     print(key, list(group))
-
