@@ -25,7 +25,3 @@ from Problems import groupByFirstchar
 groupByFirstchar.groupby_firstCharecter(dir(os))
 
 print(help(os.kill))
-
-
-
-
