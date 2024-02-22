@@ -1,4 +1,5 @@
-# check whether the path exists or not.
+# check whether the path exists or not. os.path.exists() --> takes path of the
+# folder/file to check.
 import os.path
 
 

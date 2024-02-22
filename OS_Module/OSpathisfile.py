@@ -1,4 +1,5 @@
-# checks whether the file present or not
+# checks whether the file present or not. os.path.isfile() --> takes path of the file
+# to be checked.
 
 import os
 
