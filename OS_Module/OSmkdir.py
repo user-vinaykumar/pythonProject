@@ -9,4 +9,4 @@ def createdir(item):
 
 print(createdir('this.py'))  # creates 'this' file / folder in OS_Module folder.
 
-# only one file or folder can be created.
+# only one file or folder can be created. for multiple file or folder we have another method.
