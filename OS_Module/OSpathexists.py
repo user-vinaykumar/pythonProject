@@ -12,3 +12,4 @@ def pathcheck(item):
 
 pathcheck('C://')
 pathcheck('C://vinay.txt')
+pathcheck('C://Program Files')
