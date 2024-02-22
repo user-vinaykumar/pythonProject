@@ -6,7 +6,9 @@ employee = ['sam', 'sarah', 'max', 'aria', 'mike', 'aaron']
 
 employee.sort()
 
-employee_group = groupby(employee, key=lambda n: n[0])
+def groupby_firstCharecter(item):
+    employee_group = groupby(item, key=lambda n: n[0])
+    for key, group in employee_group:
+        print(key, list(group))
 
-for key, group in employee_group:
-    print(key, list(group))
+groupby_firstCharecter(employee)
