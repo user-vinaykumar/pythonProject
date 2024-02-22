@@ -1,4 +1,5 @@
-# renames the file with os.rename('currentfile_name', 'new_filename')
+# renames the file with os.rename('currentfile_name', 'new_filename') within
+# same directory.
 import os
 def renamethefile(old, new):
     os.rename(old, new)
