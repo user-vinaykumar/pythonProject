@@ -3,11 +3,13 @@
 import time
 
 light = [('Green', 2), ('Red', 2), ('Yellow', 1)]
-length = len(light)
 
-i = 0
+
+
 #count = 1
 while True:
+    i = 0
+    length = len(light)
     c, t = light[i]
     print(c)
     time.sleep(t)
