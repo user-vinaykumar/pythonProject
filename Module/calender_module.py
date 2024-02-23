@@ -14,4 +14,4 @@ def leapCheck(item):
         print(f'the year {item} is not a leap year.')
 
 
-leapCheck(2018)
+#leapCheck(2018)
