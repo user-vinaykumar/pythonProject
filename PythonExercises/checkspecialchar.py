@@ -6,7 +6,7 @@ str = '"vinay kumar g s and sharan g s %$#@ rajeshwari and ()&"?><.,;{}[]| shiva
 
 regex = re.compile('%$#@()&?><.,[{]}?/.>,<|')
 
-if regex.search(str):
-    print('the string contains special charecters...!')
-else:
+if regex.search(str) == None:
     print('the string does not contain special charecters...!')
+else:
+    print('the string does contain special charecters...!')
