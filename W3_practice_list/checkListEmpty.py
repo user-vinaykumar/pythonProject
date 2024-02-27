@@ -11,3 +11,16 @@ def checklistEmpty(item):
 
 
 print(checklistEmpty(cities))
+
+
+# second approach
+
+def emptycheck(item):
+    k = len(item)
+    if k == 0:
+        return 'the list is empty.'
+    else:
+        return 'the list is not empty.'
+
+
+print(emptycheck(cities))
