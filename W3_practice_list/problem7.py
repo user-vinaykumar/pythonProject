@@ -4,7 +4,7 @@
 def fun():
     squareList = []
     for i in range(1, 30):
-        squareValue = i * i
+        squareValue = i**2
         squareList.append(squareValue)
     print(squareList[:5])
     print(squareList[-5:])
