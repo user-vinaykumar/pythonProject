@@ -7,3 +7,9 @@ import itertools
 
 value = list(itertools.chain(*original_list))
 print(value)
+
+
+second_list = [[1,2,3], [4,5,6], [7,8]]
+
+flattened_list = list(itertools.chain(*second_list))
+print(flattened_list)
