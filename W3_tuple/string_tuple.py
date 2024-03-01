@@ -1,6 +1,9 @@
 # convert a string to tuple.
 
-str = 'Python 3.0'
+stringchar = 'Python 3.0'
 
-result = tuple(str)
-print(result)
+def stringToTuple(item):
+    result = tuple(item)
+    print(f'the string {item} is converted to tuple {result}')
+
+stringToTuple(stringchar)
