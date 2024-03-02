@@ -8,3 +8,11 @@ sample = [(1, 2), (2, 3), (3, 4)]
 
 output = [(j[0] + j[1]) for j in sample]
 print(output)
+
+
+def test(item):
+    out = map(sum, item)
+    print(f'the output is : {list(out)}')
+
+test(sample)
+
