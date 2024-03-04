@@ -7,8 +7,8 @@ sample = ['pqrvinay', 'pqrsharan', 'pqrrajeshwari']
 
 
 
-def minword(item):
-    return min(item, key=len)
+# def minword(item):
+#     return min(item, key=len)
 
 def setsofword(items):
     minlength = min([len(word) for word in items])
