@@ -9,7 +9,7 @@ def test(item, target_val):
     for i in item:
         j = target_val - i
         if j in item:
-            checkList.append({i, j})
+            checkList.append((i, j))
         else:
             pass
 
