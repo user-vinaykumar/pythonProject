@@ -13,43 +13,102 @@ class Moviebooking:
     tamil = {'Singham1', 'Paiya', 'Leo', 'Thunivu', 'Jai Bheem', 'Jailer', 'Vikram'}
     malayalam = {'Premam', 'Jojo', 'Lucifer', 'Premalu', 'Bangalore Days', 'Bramayugam'}
 
+    def otp(self):
+        return random.randint(100000, 1000000)
 
     def cardvalidation(self, carddetail1, carddetail2):
         if type(carddetail1) == int:
             if len(carddetail1)>3:
                 time.sleep(4.0)
-                print(f'wait!!! fetching data from the database.....')
+                print(f'wait!!! Processing the CVV.....')
                 time.sleep(3.0)
-                return ''
+                if len(carddetail2) == 3:
+                    print(f'Card validated successfully...')
+                    return True
+                else:
+                    print(f'Entered wrong CVV..')
+                    return False
+            else:
+                print(f'Wrong card number...')
+                return False
+        else:
+            print(f'This card does not exist...')
+            return False
 
 
 
 
-    def debitcardpay(self):
-        debitcardno = int(input('Enter the debit card number : '))
-        debitcvv = int(input('Enter the cvv : '))
+    def debitcardpay(self, ticketsum1):
+        debitticketprice = 500
+        debitcardno = int(input('Enter the debit card number :'))
+        debitcvv = int(input('Enter the cvv :'))
+        self.cardvalidation(debitcardno, debitcvv)
+        if self.cardvalidation(debitcardno, debitcvv) == True:
+            debitticketprice*=ticketsum1
+            time.sleep(3.0)
+            paypricedb = input(f'ready to pay the ticket {debitticketprice} enter y/n :')
+            if paypricedb.upper() == 'Y':
+                time.sleep(3.0)
+                print(f'This is your OTP : {self.otp()}')
+                time.sleep(3.0)
+                enterOTP = input('Enter the OTP received :')
+                if self.otpvalidation(enterOTP) == True:
+                    return 'PAYMENT DONE SUCCESSFULLY'
+                else:
+                    return 'WRONG OTP'
+            else:
+                return 'PAYMENT CANCELLED'
 
 
-    def creditcardpay(self):
-        creditcardno = int(input('Enter your credit card number : '))
-        creditcvv = int(input('Enter the cvv : '))
 
-    def upipay(self):
-        upinumber = int(input('Enter the upi id number : '))
+
+
+    def creditcardpay(self, ticketsum2):
+        creditticketprice = 500
+        creditcardno = int(input('Enter your credit card number :'))
+        creditcvv = int(input('Enter the cvv :'))
+        self.cardvalidation(creditcardno, creditcvv)
+        if self.cardvalidation(creditcardno, creditcvv) == True:
+            creditticketprice *= ticketsum2
+            time.sleep(3.0)
+            paypricecc = input(f'ready to pay the ticket {creditticketprice} enter y/n :')
+            if paypricecc.upper() == 'Y':
+                time.sleep(3.0)
+                print(f'this is your OTP :{self.otp()}')
+                time.sleep(3.0)
+                enterOTP = input('Enter the OTP recieved.')
+                if self.otpvalidation(enterOTP) == True:
+                    return 'PAYMENT DONE SUCCESSFULLY'
+                else:
+                    return 'WRONG OTP'
+            else:
+                return 'PAYMENT CANCELLED'
+
+
+
+
+
+    def upipay(self, ticketsum3):
+        pass
+
 
 
 
     def pay(self, tickets):
         if tickets > 0:
             time.sleep(4.0)
-            ticketpay = input('credit card / debit card / UPI : ')
+            ticketpay = input('credit card / debit card / UPI :')
             time.sleep(3.0)
             if ticketpay == 'credit card':
-                self.creditcardpay()
+                return self.creditcardpay(tickets)
             elif ticketpay == 'debit card':
-                self.debitcardpay()
+                return self.debitcardpay(tickets)
             elif ticketpay == 'UPI':
-                self.upipay()
+                return self.upipay(tickets)
+            else:
+                return 'Enter the payment method.'
+        else:
+            return 'Select the tickets.'
 
 
 
@@ -68,16 +127,23 @@ class Moviebooking:
 
 
     def selectMovies(self):
-        movieLanguage = input('Enter the language you want to book a movie for : ')
-        movieName = input('Enter the movie you want to book : ')
+        movieLanguage = input('Enter the language you want to book a movie for :')
+        movieName = input('Enter the movie you want to book :')
         if movieName in self.selectMovieList(movieLanguage):
             time.sleep(4.0)
             print(f'wait...the process is loading!!!!')
             time.sleep(3.0)
-            numberOfTickets = int(input('Enter the number of tickets to be booked : '))
+            numberOfTickets = int(input('Enter the number of tickets to be booked :'))
             self.pay(numberOfTickets)
 
         else:
             time.sleep(4.0)
             return 'Movie you are looking is not in the website..'
+
+    def otpvalidation(self, onetimepassword):
+        if onetimepassword == onetimepassword:
+            return True
+        else:
+            return False
+
 
