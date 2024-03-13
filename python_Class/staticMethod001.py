@@ -11,9 +11,7 @@ class Employee:
 
     @staticmethod
     def is_weekdaY(day):  # static methods neither take self nor cls as their arguments but receive what is given.
-        if day.weekday() == 5:
-            return False
-        elif day.weekday() == 6:
+        if day.weekday() == 5 or day.weekday() == 6:
             return False
         return True
 
