@@ -26,9 +26,30 @@ class Mobilephones:
     def setTaxrate(cls, taxrate):  # assinging class variable with value using class method.
         cls.tax = taxrate           # so that the dynamic coding will be achieved.
 
+    @classmethod
+    def from_string(cls, phone_string): # alternative constructor where we are telling this class to take the string input
+        brand, model, generation, price = phone_string.split('-') # as separate variable assignment.
+        return cls(brand, model, generation, price)
+
 iphone13 = Mobilephones('Apple', 'iphone', 13, 60000)
 print(iphone13.totalcost())
 Mobilephones.setTaxrate(2.0)
 print(iphone13.totalcost())
+
+my_phone1 = 'samsung-galaxy-s23-70000'
+my_phone2 = 'motorola-g44-4-23000'
+
+print(Mobilephones.phonesale)
+print(f'--------------')
+newphone1 = Mobilephones.from_string(my_phone1)
+newphone2 = Mobilephones.from_string(my_phone2)
+print(Mobilephones.phonesale)
+
+print(newphone1.fullName())
+print(newphone2.fullName())
+
+print(Mobilephones.phonesale)
+
+
 
 
