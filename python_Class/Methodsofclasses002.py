@@ -140,7 +140,11 @@ class Moviebooking:
         self.pay(self.numOfTickets)
 
 vinay = Moviebooking(3)
-vinay.bookMovie()
+vinay.kanLangMov(['Manjummel Boys', 'KGF', 'Kantara', 'Kaatera', 'Blink', 'Shaakahaari', 'SSE'])
+print(vinay.kannada)
+
+# sharan = Moviebooking(4)
+# sharan = Moviebooking.kanLangMov()
 
 
 
