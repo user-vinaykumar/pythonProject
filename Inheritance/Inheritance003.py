@@ -29,3 +29,35 @@ class Developer(Employee):
     def programmingLang(self):
         return f'language the developer is using {self.prog_lang}'
 
+class Manager(Employee):
+
+    raise_amount = 1.20
+
+    def __init__(self, firstName, lastName, pay, emps):
+        super().__init__(firstName, lastName, pay)
+        if emps is None:
+            self.emps = []
+        else:
+            self.emps = emps
+
+    def add_emp(self, emp):
+        if emp not in self.emps:
+            self.emps.append(emp)
+        return self.emps
+
+    def remove_emp(self, emp):
+        if emp in self.emps:
+            self.emps.remove(emp)
+        return self.emps
+
+    def print_emps(self):
+        for emp in self.emps:
+            print(f'--> {emp.fullName()}')
+
+dev2 = Developer('spoorthi', 'nu', 60000, 'Java')
+
+manager1 = Manager('srinivas', 'muddulur', 70000, [dev2])
+
+print(manager1.add_emp(dev2))
+print(manager1.print_emps())
+
