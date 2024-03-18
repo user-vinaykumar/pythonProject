@@ -50,7 +50,7 @@ class Auto(Bike):
 
     def __init__(self, brand, bike, mileage, price, displacement, weight=None):
         super().__init__(brand, bike, mileage, price, displacement)
-        if self.weight is None:
+        if weight is None:
             self.weight = []
         else:
             self.weight = weight
@@ -60,12 +60,14 @@ class Auto(Bike):
             self.weight.append(vehicle)
         else:
             pass
+        return self.weight
 
     def remove_vehicle(self, vehicle1):
         if vehicle1 in self.weight:
             self.weight.remove(vehicle1)
         else:
             pass
+        return self.weight
 
     def print_vehicles(self, vehicles2):
         for vehicles2 in self.weight:
@@ -77,8 +79,15 @@ class Auto(Bike):
 
 
 
+
+
 print(activa5g.bikeInfo())
 print(activa5g.bikePrice())
 activa5g.set_hike_amount(1.10)
 print(activa5g.hiked_price())
+
+auto1 = Auto('Bajaj', 'chethak', 55, 50000,
+             135, None)
+
+print(auto1.print_vehicles(activa5g.bikeInfo()))
 
