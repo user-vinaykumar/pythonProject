@@ -33,7 +33,7 @@ class Manager(Employee):
 
     raise_amount = 1.20
 
-    def __init__(self, firstName, lastName, pay, emps):
+    def __init__(self, firstName, lastName, pay, emps=None):
         super().__init__(firstName, lastName, pay)
         if emps is None:
             self.emps = []
@@ -54,10 +54,31 @@ class Manager(Employee):
         for emp in self.emps:
             print(f'--> {emp.fullName()}')
 
+class JuniorDeveloper(Developer):
+
+    def __init__(self, firstName, lastName, pay, prog_lang, noye):
+        super().__init__(firstName, lastName, pay, prog_lang)
+        self.noye = noye
+
+    def numberOfExperience(self):
+        return f'Junior Developer has {self.noye} years of experience'
+
 dev2 = Developer('spoorthi', 'nu', 60000, 'Java')
+dev1 = Developer('vinay', 'kumar', 75000, 'Python')
 
-manager1 = Manager('srinivas', 'muddulur', 70000, [dev2])
+manager1 = Manager('srinivas', 'muddulur', 70000, [])
 
-print(manager1.add_emp(dev2))
+jd1 = JuniorDeveloper('sharan', 'gs', 40000,
+                      'JavaScript', 2)
+
+
+
+manager1.add_emp(dev2)
+manager1.add_emp(dev1)
+manager1.remove_emp(dev2)
+
 print(manager1.print_emps())
+print(jd1.numberOfExperience())
+
+
 
