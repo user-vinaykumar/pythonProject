@@ -33,6 +33,17 @@ class Student:
     def studentsubjects(self):
         return f'student subjects are : {self.subjects}'
 
+    def add_subjects(self, sub1, sub2, sub3, sub4):
+        if len(self.subjects) == 0:
+            self.subjects.append(sub1)
+            self.subjects.append(sub2)
+            self.subjects.append(sub3)
+            self.subjects.append(sub4)
+
+
+    def print_subjects(self):
+        return self.subjects
+
 class CSE_students(Student):
     interanl_marks = 20
     def __init__(self, name, branch, id, section, college, branchcode, subjects=None):
@@ -75,10 +86,13 @@ chandan = Civil('Chandan', 'Civil', 9, 'A',
                 'Ghousia College of Engineering', 'CV001', )
 
 vinay = CSE_students('Vinay Kumar', 'Computers', 67, 'A',
-                     'Ghousia College of Engineering', 'CS001', )
+                     'Ghousia College of Engineering', 'CS001',
+                     ['logic Design', 'Maths', 'Micro Processor', 'DSA'])
 
-
-
+print(vinay.studentInfo())
+print(sachin.studentInfo())
+sachin.add_subjects('structures', 'drawing', 'roadways', 'env')
+print(sachin.print_subjects())
 
 
 
