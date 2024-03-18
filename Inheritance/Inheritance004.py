@@ -62,6 +62,23 @@ class Mechanical(CSE_students):
     def __init__(self, name, branch, id, section, college, branchcode, subjects=None):
         super().__init__(name, branch, id, section, college, branchcode, subjects)
 
+jeevan = Mechanical('Jeevan', 'Mechanical', 23,
+                    'B', 'Ghousia College of Engineering',
+                    'ME001', )
+mahesh = Civil('Mahesh Kumar', 'Civil', 42, 'A',
+               'Ghousia College of Engineering', 'CV001', )
+
+sachin = Civil('Sachin', 'Civil', 77, 'A',
+               'Ghousia College of Engineering', 'CV001', )
+
+chandan = Civil('Chandan', 'Civil', 9, 'A',
+                'Ghousia College of Engineering', 'CV001', )
+
+vinay = CSE_students('Vinay Kumar', 'Computers', 67, 'A',
+                     'Ghousia College of Engineering', 'CS001', )
+
+
+
 
 
 
