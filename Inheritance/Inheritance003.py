@@ -79,6 +79,9 @@ manager1.remove_emp(dev2)
 
 print(manager1.print_emps())
 print(jd1.numberOfExperience())
+print(jd1.fullName())
+manager1.add_emp(jd1)
+print(manager1.print_emps())
 
 
 
