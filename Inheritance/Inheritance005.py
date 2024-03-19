@@ -31,3 +31,15 @@ class Home:
     def showDietyroom(self):
         return f'Dietyroom would be : {self.deityroom}'
 
+class Duplex(Home):
+
+    site_dimensions = '50-60'
+
+    def __init__(self, livingroom, kitchen, bathroom, dietyroom, bedroom, staircase):
+        super().__init__(livingroom, kitchen, bathroom, dietyroom, bedroom)
+        self.staircase = staircase
+
+    def showStaircase(self):
+        return f'Staircase would be : {self.staircase}'
+
+
