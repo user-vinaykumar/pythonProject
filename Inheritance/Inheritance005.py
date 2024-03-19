@@ -42,4 +42,7 @@ class Duplex(Home):
     def showStaircase(self):
         return f'Staircase would be : {self.staircase}'
 
+duplex1 = Duplex()
+home1 = Home()
+
 
