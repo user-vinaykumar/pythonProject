@@ -19,3 +19,9 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, prog_lang):
+        super().__init__(firstname, lastname, pay, company)
+        self.prog_lang = prog_lang
+
