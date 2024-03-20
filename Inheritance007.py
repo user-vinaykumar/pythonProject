@@ -64,3 +64,31 @@ class JuniorDeveloper(Developer):
             return 'the list is empty'
         else:
             return self.rms
+
+dev1 = Developer('spoorthi', 'nu', 60000, 'Cognizanr',
+                 'Java')
+dev2 = Developer('vinay', 'kumar', 70000, 'Virtusa',
+                 'Python')
+dev3 = Developer('sharan', 'GS', 50000, 'Accenture',
+                 'Javascript')
+manager1 = Manager('Srinivas', 'Muddulur', 90000, 'Virtusa',
+                   [dev2, dev1])
+
+print(manager1.company)
+manager1.print_emp()
+print(f'-----------------')
+manager1.add_emp(dev3)
+manager1.print_emp()
+print(f'----------------')
+print(dev2.email())
+print(dev1.email())
+print(dev3.email())
+print(f'--------------------')
+print(dev3.raise_amount)
+print(dev2.raise_amount)
+print(dev1.raise_amount)
+print(f'------------------')
+manager1.remove_emp(dev3)
+manager1.print_emp()
+
+
