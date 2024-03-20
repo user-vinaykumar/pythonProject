@@ -17,13 +17,13 @@ class Employee:
     def applyRaise(self):
         self.pay = int(self.pay * self.raise_amount)
 
-# class Developer(Employee):
-#
-#     raise_amount = 1.05
-#
-#     def __init__(self, firstname, lastname, pay, company, prog_lang):
-#         super().__init__(firstname, lastname, pay, company)
-#         self.prog_lang = prog_lang
+class Developer(Employee):
+
+    raise_amount = 1.05
+
+    def __init__(self, firstname, lastname, pay, company, prog_lang):
+        super().__init__(firstname, lastname, pay, company)
+        self.prog_lang = prog_lang
 #
 # class Manager(Employee):
 #
