@@ -49,3 +49,18 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employees:
             print(f'--> {emp.fullname()}')
+
+class JuniorDeveloper(Developer):
+
+    def __init__(self, firstname, lastname, pay, company, rms=None):
+        super().__init__(firstname, lastname, pay, company)
+        if rms is None:
+            self.rms = []
+        else:
+            self.rms = rms
+
+    def rmsdetails(self):
+        if self.rms is []:
+            return 'the list is empty'
+        else:
+            return self.rms
