@@ -52,25 +52,25 @@ class Manager(Employee):
 
 
 
-# dev1 = Developer('vinay', 'kumar', 50000, 'Virtusa',
-#                  'Python')
-#
-# dev2 = Developer('Spoorthi', 'NU', 60000,
-#                  'Cognizant', 'Java')
-# manger1 = Manager('Srinivas', 'Muddulur', 50000,
-#                   'Virtusa', [dev2])
-#
-#
-#
-# print(dev1.pay)
-# dev1.applyRaise()
-# print(dev1.pay)
-# print(manger1.fullName())
-# print(manger1.firstname)
-# print(manger1.pay)
-# print(dev1.pay)
-#
-# manger1.add_emp(dev1)
-# manger1.print_emp()
-# manger1.remove_emp(dev1)
-# manger1.print_emp()
+dev1 = Developer('vinay', 'kumar', 50000, 'Virtusa',
+                 'Python')
+
+dev2 = Developer('Spoorthi', 'NU', 60000,
+                 'Cognizant', 'Java')
+manger1 = Manager('Srinivas', 'Muddulur', 50000,
+                  'Virtusa', [dev2])
+
+
+
+print(dev1.pay)
+dev1.applyRaise()
+print(dev1.pay)
+print(manger1.fullName())
+print(manger1.firstname)
+print(manger1.pay)
+print(dev1.pay)
+
+manger1.add_emp(dev1)
+manger1.print_emp()
+manger1.remove_emp(dev1)
+manger1.print_emp()
