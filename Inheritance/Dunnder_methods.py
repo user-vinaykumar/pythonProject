@@ -28,3 +28,6 @@ print(emp1) # returns the dunnder method (__repr__) whenever we print the emp ob
             # we can define the dunnder method as we defined here now.
 print(f'-----------')
 print(emp1)
+
+# if we do not use __str__ dunnder the __repr__ will have more importance
+# if we use __str__ then, we have __repr__ is of no use since the object will first see the str dunnder.
