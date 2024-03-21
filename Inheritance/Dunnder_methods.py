@@ -20,7 +20,11 @@ class Employee:
     def __repr__(self):
         return f'{self.firstname} {self.lastname} {self.pay} {self.company}'
 
+    def __str__(self):
+        return f'{self.fullname()} {self.email()}'
+
 emp1 = Employee('vinay', 'kumar', 60000, 'Virtusa')
 print(emp1) # returns the dunnder method (__repr__) whenever we print the emp object.
             # we can define the dunnder method as we defined here now.
-
+print(f'-----------')
+print(emp1)
