@@ -21,5 +21,10 @@ class Employee:
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
 
+class Developer(Employee):
+    def __init__(self, firstdev, lastdev, paydev, devcompany, prog_lang):
+        super().__init__(firstdev, lastdev, paydev, devcompany)
+        self.prog_lang = prog_lang
+
 
 
