@@ -17,3 +17,10 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+    def __repr__(self):
+        return f'{self.firstname} {self.lastname} {self.pay} {self.company}'
+
+emp1 = Employee('vinay', 'kumar', 60000, 'Virtusa')
+print(emp1) # returns the dunnder method (__repr__) whenever we print the emp object.
+            # we can define the dunnder method as we defined here now.
+
