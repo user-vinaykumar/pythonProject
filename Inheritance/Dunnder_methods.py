@@ -23,7 +23,11 @@ class Employee:
     def __str__(self):
         return f'{self.fullname()} {self.email()}'
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
 emp1 = Employee('vinay', 'kumar', 60000, 'Virtusa')
+emp2 = Employee('spoorthi', 'nu', 50000, 'Cognizant')
 print(emp1) # returns the dunnder method (__repr__) whenever we print the emp object.
             # we can define the dunnder method as we defined here now.
 print(f'-----------')
@@ -31,3 +35,5 @@ print(emp1)
 
 # if we do not use __str__ dunnder the __repr__ will have more importance
 # if we use __str__ then, we have __repr__ is of no use since the object will first see the str dunnder.
+print(emp1 + emp2) # adds the pay of both the object, since we have mentioned self.pay in add dunnder menthod
+                    # it will make other as other object
