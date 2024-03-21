@@ -50,5 +50,32 @@ class Manager(Employee):
         for emp in self.employees:
             print(f'--> {emp.fullname()}')
 
+dev1 = Developer('vinay', 'kumar', 50000, 'Virtusa',
+                 'Python')
+dev2 = Developer('spoorthi', 'nu', 60000, 'Cognizant',
+                 'Java')
+dev3 = Developer('Sharan', 'gs', 70000, 'Accenture',
+                 'Javascript')
+manager1 = Manager('Swaroop', 'nu', 80000, 'Infosys',
+                   [])
+
+print(dev1.pay)
+print(dev1.raise_amount)
+dev1.apply_raise()
+print(dev1.pay)
+print(f'----------------')
+print(dev2.raise_amount)
+dev2.set_raise_amount(1.20)
+dev2.apply_raise()
+print(dev2.pay)
+print(dev2.raise_amount)
+print(dev3.email())
+print(f'-----------------')
+manager1.print_emp()
+manager1.add_emp(dev2)
+manager1.print_emp()
+manager1.add_emp(dev1)
+manager1.print_emp()
+
 
 
