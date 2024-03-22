@@ -20,3 +20,11 @@ class Employee:
     def set_raise_amount(cls, amount):
         cls.amount = amount
 
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, proglang):
+        super().__init__(firstname, lastname, pay, company)
+        self.proglang = proglang
+
+
+
