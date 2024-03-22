@@ -20,6 +20,10 @@ class Employee:
     def set_raise_amount(cls, amount):
         cls.amount = amount
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
+
 class Developer(Employee):
 
     def __init__(self, firstname, lastname, pay, company, proglang):
@@ -54,6 +58,11 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employees:
             print(f'--> {emp.fullname()}')
+
+
+emp1 = Employee('vinay', 'kumar', 60000, 'Virtusa')
+emp2 = Employee('spoorthi', 'nu', 80000, 'Cognizant')
+
 
 
 
