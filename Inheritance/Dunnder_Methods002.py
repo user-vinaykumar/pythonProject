@@ -39,6 +39,10 @@ class Developer(Employee):
     def programming(self):
         return f'language he is performing : {self.proglang}'
 
+    # def __len__(self):
+    #     return f'length of the fullname of the employee is {len(self.fullname())}'
+
+
 class Manager(Employee):
 
     def __init__(self, firstname, lastname, pay, company, employees=None):
