@@ -23,6 +23,11 @@ class Employee:
     def __add__(self, other):
         return self.pay + other.pay
 
+    def __str__(self):
+        return (f'name : {self.firstname}\n '
+                f'company : {self.company}\n '
+                f'pay : {self.pay}')
+
 
 class Developer(Employee):
 
@@ -68,6 +73,8 @@ dev1 = Developer('vinay', 'gs', 30000, 'Virtusa',
 dev2 = Developer('spoorthi', 'nu', 70000, 'Cognizant',
                  'Java')
 print(dev1 + emp2)
+print(dev2)
+
 
 
 
