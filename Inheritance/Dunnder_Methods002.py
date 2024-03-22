@@ -13,3 +13,6 @@ class Employee:
     def fullname(self):
         return f'full name : {self.firstname} {self.lastname}'
 
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
