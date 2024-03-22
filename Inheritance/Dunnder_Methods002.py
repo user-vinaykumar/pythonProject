@@ -63,6 +63,12 @@ class Manager(Employee):
 emp1 = Employee('vinay', 'kumar', 60000, 'Virtusa')
 emp2 = Employee('spoorthi', 'nu', 80000, 'Cognizant')
 
+dev1 = Developer('vinay', 'gs', 30000, 'Virtusa',
+                 'Python')
+dev2 = Developer('spoorthi', 'nu', 70000, 'Cognizant',
+                 'Java')
+print(dev1 + emp2)
+
 
 
 
