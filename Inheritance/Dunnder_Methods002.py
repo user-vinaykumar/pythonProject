@@ -27,4 +27,7 @@ class Developer(Employee):
         self.proglang = proglang
 
 
+    def programming(self):
+        return f'language he is performing : {self.proglang}'
+
 
