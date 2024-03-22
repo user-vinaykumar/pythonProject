@@ -74,6 +74,10 @@ dev2 = Developer('spoorthi', 'nu', 70000, 'Cognizant',
                  'Java')
 print(dev1 + emp2)
 print(dev2)
+manager1 = Manager('srinivas', 'mudduluru', 90000,
+                   'Virtusa', [dev2, dev1])
+print(f'---------------')
+print(manager1)
 
 
 
