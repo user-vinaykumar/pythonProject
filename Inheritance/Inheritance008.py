@@ -22,7 +22,11 @@ class Employee:
     def __repr__(self):
         return f'{self.fullname()}'
 
-
+    def __str__(self):
+        return (f'name : {self.fullname()}\n '
+                f'email : {self.email()}\n '
+                f'pay : {self.pay}\n '
+                f'company : {self.company}')
 
 class Developer(Employee):
 
