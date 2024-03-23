@@ -30,3 +30,16 @@ emp1.fullname = 'vinay kumar'
 print(emp1.email)
 # emp1.email = 'spoorthi@gmail.com'
 # print(emp1.email)
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, proglang):
+        super().__init__(firstname, lastname, pay, company)
+        self.proglang = proglang
+
+dev1 = Developer('swaroop', 'nu', 50000, 'Virtusa',
+                 'Java')
+
+print(dev1.fullname)
+print(dev1.email)
+dev1.fullname = 'sharan gs'
+print(dev1.email)
