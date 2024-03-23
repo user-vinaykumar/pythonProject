@@ -19,6 +19,11 @@ class Employee:
         return (f'email of the employee : {self.firstname}.{self.lastname}'
                 f'@{self.company}.com')
 
+    def __repr__(self):
+        return f'{self.fullname()}'
+
+
+
 class Developer(Employee):
 
     def __init__(self, firstname, lastname, pay, company, programming_language):
