@@ -28,3 +28,5 @@ print(emp1.fullname)
 print(emp1.email)
 emp1.fullname = 'vinay kumar'
 print(emp1.email)
+# emp1.email = 'spoorthi@gmail.com'
+# print(emp1.email)
