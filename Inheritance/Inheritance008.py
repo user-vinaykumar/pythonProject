@@ -8,3 +8,6 @@ class Employee:
         self.pay = pay
         self.company = company
 
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
