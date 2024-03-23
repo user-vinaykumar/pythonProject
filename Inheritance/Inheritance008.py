@@ -58,3 +58,12 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employees:
             print(f'--> {emp.email()}')
+
+dev2 = Developer('spoorthi', 'nu', 80000, 'Cognizant',
+                 'Java')
+dev1 = Developer('vinay', 'kumar', 60000, 'Virtusa',
+                 'Python')
+
+manager = Manager('srinivas', 'muddulur', 90000, 'Virtusa',
+                  )
+print(manager)
