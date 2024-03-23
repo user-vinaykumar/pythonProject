@@ -25,7 +25,7 @@ class Developer(Employee):
         super().__init__(firstname, lastname, pay, company)
         self.programming_language = programming_language
 
-class Manager(Employee)
+class Manager(Employee):
 
     def __init__(self, firstname, lastname, pay, company, employees = None):
         super().__init__(firstname, lastname, pay, company)
@@ -33,4 +33,12 @@ class Manager(Employee)
             self.employees = []
         else:
             self.employees = employees
+
+    def add_emp(self, emp):
+        if emp not in self.employees:
+            list.append(emp)
+        else:
+            pass
+
+
 
