@@ -1,7 +1,6 @@
 # Inheritance concepts - applying everything I learnt till now.
 
 class Employee:
-
     raise_amount = 1.10
 
     def __init__(self, firstname, lastname, pay, company):
@@ -26,6 +25,12 @@ class Employee:
     def fullname(self):
         return f'full name of the employee is : {self.firstname} {self.lastname}'
 
+    @fullname.setter
+    def fullname(self, name):
+        first, last = name.split(' ')
+        self.firstname = first
+        self.lastname = last
+
     @property
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.company}.com'
@@ -45,6 +50,7 @@ class Developer(Employee):
     def __init__(self, firstname, lastname, pay, company, prog_lang):
         super().__init__(firstname, lastname, pay, company)
         self.prog_lang = prog_lang
+
 
 class Manager(Employee):
 
@@ -71,6 +77,7 @@ class Manager(Employee):
         for emp in self.employees:
             print(f'--> {emp.fullname}, {emp.email}')
 
+
 emp1 = Employee('sharan', 'gs', 500, 'aplha')
 emp2 = Employee('swaroop', 'nu', 500, 'alpha')
 cls1 = 'vinay-kumar-80000-virtusa'
@@ -91,6 +98,3 @@ print(emp1.pay)
 print(emp2.pay)
 print(emp1.email)
 print(emp2.fullname)
-
-
-
