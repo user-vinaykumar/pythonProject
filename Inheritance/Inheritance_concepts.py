@@ -22,9 +22,11 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+    @property
     def fullname(self):
         return f'full name of the employee is : {self.firstname} {self.lastname}'
 
+    @property
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.company}.com'
 
@@ -67,7 +69,7 @@ class Manager(Employee):
 
     def print_emp(self):
         for emp in self.employees:
-            print(f'--> {emp.fullname()}, {emp.email()}')
+            print(f'--> {emp.fullname}, {emp.email}')
 
 emp1 = Employee('sharan', 'gs', 500, 'aplha')
 emp2 = Employee('swaroop', 'nu', 500, 'alpha')
@@ -87,4 +89,8 @@ emp2.apply_raise()
 emp1.apply_raise()
 print(emp1.pay)
 print(emp2.pay)
+print(emp1.email)
+print(emp2.fullname)
+
+
 
