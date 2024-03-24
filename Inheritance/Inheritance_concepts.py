@@ -14,6 +14,11 @@ class Employee:
     def set_raise(cls, amount):
         cls.raise_amount = amount
 
+    @classmethod
+    def emp_instance(cls, item):
+        first, last, pay, comp = item.split('-')
+        return cls(first, last, pay, comp)
+
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
