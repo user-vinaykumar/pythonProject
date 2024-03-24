@@ -67,7 +67,7 @@ class Manager(Employee):
 
     def print_emp(self):
         for emp in self.employees:
-            print(f'--> {Employee.fullname()}, {Employee.email()}')
+            print(f'--> {emp.fullname()}, {emp.email()}')
 
 emp1 = Employee('sharan', 'gs', 500, 'aplha')
 emp2 = Employee('swaroop', 'nu', 500, 'alpha')
@@ -75,4 +75,8 @@ cls1 = 'vinay-kumar-80000-virtusa'
 cls2 = Employee.emp_instance(cls1)
 print(cls2.pay)
 print(emp1 + emp2)
+manager1 = Manager('srinivas', 'muddduluru',
+                   60000, 'virtusa', [emp2, emp1])
+
+manager1.print_emp()
 
