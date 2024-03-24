@@ -39,4 +39,10 @@ class Manager(Employee):
         else:
             self.employees = employees
 
+    def add_emp(self, emp):
+        if emp not in self.employees:
+            list.append(emp)
+        else:
+            pass
+
 
