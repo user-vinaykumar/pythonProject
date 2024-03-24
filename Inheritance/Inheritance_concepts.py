@@ -67,3 +67,6 @@ class Manager(Employee):
             print(f'--> {Employee.fullname()}, {Employee.email()}')
 
 
+cls1 = 'vinay-kumar-80000-virtusa'
+cls2 = Employee.emp_instance(cls1)
+print(cls2.pay)
