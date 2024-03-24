@@ -1,0 +1,12 @@
+# Inheritance concepts - applying everything I learnt till now.
+
+class Employee:
+
+    raise_amount = 1.10
+
+    def __init__(self, firstname, lastname, pay, company):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.pay = pay
+        self.company = company
+
