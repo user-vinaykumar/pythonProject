@@ -26,7 +26,8 @@ class Employee:
     def __repr__(self):
         return f'name of the employee : {self.firstname} {self.lastname}'
 
-
+    def __str__(self):
+        return f'email of the employee : {self.email()}'
 
 
 class Developer(Employee):
