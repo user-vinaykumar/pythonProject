@@ -79,4 +79,12 @@ manager1 = Manager('srinivas', 'muddduluru',
                    60000, 'virtusa', [emp2, emp1])
 
 manager1.print_emp()
+emp1.set_raise(2)
+emp2.set_raise(3)
+print(emp1.pay)
+print(emp2.pay)
+emp2.apply_raise()
+emp1.apply_raise()
+print(emp1.pay)
+print(emp2.pay)
 
