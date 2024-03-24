@@ -98,3 +98,9 @@ print(emp1.pay)
 print(emp2.pay)
 print(emp1.email)
 print(emp2.fullname)
+emp1.fullname = 'vinay kumar'
+emp2.fullname = 'spoorthi nu'
+print(emp2.fullname)
+print(emp1.fullname)
+print(emp1.email)
+print(emp2.email)
