@@ -13,3 +13,8 @@ class Employee:
     @classmethod
     def set_raise(cls, amount):
         cls.raise_amount = amount
+
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
+
