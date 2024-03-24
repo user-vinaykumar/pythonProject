@@ -24,3 +24,10 @@ class Employee:
         return f'{self.firstname}.{self.lastname}@{self.company}.com'
 
 
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, prog_lang):
+        super().__init__(firstname, lastname, pay, company)
+        self.prog_lang = prog_lang
+
+
