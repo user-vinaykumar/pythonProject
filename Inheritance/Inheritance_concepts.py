@@ -17,4 +17,7 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+    def fullname(self):
+        return f'full name of the employee is : {self.firstname} {self.lastname}'
+
 
