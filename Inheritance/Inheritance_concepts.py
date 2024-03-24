@@ -75,3 +75,4 @@ cls1 = 'vinay-kumar-80000-virtusa'
 cls2 = Employee.emp_instance(cls1)
 print(cls2.pay)
 print(emp1 + emp2)
+
