@@ -10,3 +10,6 @@ class Employee:
         self.pay = pay
         self.company = company
 
+    @classmethod
+    def set_raise(cls, amount):
+        cls.raise_amount = amount
