@@ -23,6 +23,11 @@ class Employee:
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.company}.com'
 
+    def __repr__(self):
+        return f'name of the employee : {self.firstname} {self.lastname}'
+
+
+
 
 class Developer(Employee):
 
@@ -54,3 +59,5 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employees:
             print(f'--> {Employee.fullname()}, {Employee.email()}')
+
+
