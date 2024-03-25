@@ -107,6 +107,15 @@ print(dev2.fullname)
 print(dev1.email)
 dev1.fullname = 'sharan gudigenahalli'
 print(dev1.email)
-dev1.raise_amount = 1.20
 print(dev1.raise_amount)
 print(emp1.raise_amount)
+print(f'emp1 pay is {emp1.pay}')
+emp1.apply_raise()
+print(f'emp1 pay now : {emp1.pay}')
+print(f'emp1 raise amount : {emp1.raise_amount}')
+print(f'dev1 raise amount : {dev1.raise_amount}')
+print(f'dev1 pay is : {dev1.pay}')
+dev1.raise_amount = 1.20
+dev1.apply_raise()
+print(f'dev1 raise amount : {dev1.raise_amount}')
+print(f'dev1 pay now : {dev1.pay}')
