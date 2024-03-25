@@ -25,6 +25,9 @@ class Employee:
         return (f'email of the employee is : {self.firstname}{self.lastname}'
                 f'@{self.company}.com')
 
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
     @classmethod
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
