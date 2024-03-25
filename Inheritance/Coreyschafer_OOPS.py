@@ -23,4 +23,8 @@ class Employee:
         return (f'email of the employee is : {self.firstname}{self.lastname}'
                 f'@{self.company}.com')
 
+    @classmethod
+    def set_raise_amount(cls, amount):
+        cls.raise_amount = amount
+
 
