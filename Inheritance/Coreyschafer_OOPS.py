@@ -75,7 +75,15 @@ class Manager(Employee):
         for emp in self.employees:
             print(f'--> {emp.fullname}')
 
+emp1 = Employee('vinay', 'kumar', 500, 'abc')
+emp2 = Employee('spoorthi', 'nu', 600, 'efg')
+dev1 = Developer('sharan', 'gs', 700, 'xyz'
+                 , 'C#')
+dev2 = Developer('swaroop', 'nu', 600, 'jkl',
+                 'Javascript')
 
+manager1 = Manager('srinivas', 'muddulur', 900,
+                   'abc', [emp2, emp1, dev1])
 
 
 
