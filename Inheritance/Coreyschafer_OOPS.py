@@ -86,5 +86,24 @@ manager1 = Manager('srinivas', 'muddulur', 900,
                    'abc', [emp2, emp1, dev1])
 
 
+manager1.print_emp()
+manager1.remove_emp(dev1)
+print(f'-------------')
+manager1.print_emp()
+manager1.add_emp(dev2)
+print(f'-----------')
+manager1.print_emp()
+manager1.add_emp(dev1)
+print(f'-------------')
+manager1.print_emp()
 
-
+print(dev1.fullname)
+print(emp1.fullname)
+print(emp2.fullname)
+print(dev2.fullname)
+print(dev1.email)
+dev1.fullname = 'sharan gudigenahalli'
+print(dev1.email)
+dev1.raise_amount = 1.20
+print(dev1.raise_amount)
+print(emp1.raise_amount)
