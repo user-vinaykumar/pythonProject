@@ -8,5 +8,15 @@ class Employee:
         self.pay = pay
         self.company = company
 
+    @property
     def fullname(self):
         return f'full name : {self.firstname} {self.lastname}'
+
+    @fullname.setter
+    def fullname(self, name):
+        first, last = name.split(' ')
+        self.firstname = first
+        self.lastname = last
+
+
+
