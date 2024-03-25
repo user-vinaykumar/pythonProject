@@ -50,6 +50,15 @@ class Developer(Employee):
         self.prog_lang = prog_lang
 
 
+class Manager(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, employees=None):
+        super().__init__(firstname, lastname, pay, company)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+
 
 
 
