@@ -17,6 +17,9 @@ class Employee:
         first, last, pay, company = item.split(' ')
         return cls(first, last, pay, company)
 
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
     @property
     def fullname(self):
         return f'full name of the employee : {self.firstname} {self.lastname}'
@@ -81,3 +84,7 @@ dev2 = Developer('swaroop', 'nu', 800,
                  'virtusa', 'Python')
 manager1 = Manager('srinivas', 'muddulur', 900,
                    'virtusa', [])
+
+print(emp1.raise_amount)
+print(emp1.pay)
+emp1.set_raise_amount(1.5)
