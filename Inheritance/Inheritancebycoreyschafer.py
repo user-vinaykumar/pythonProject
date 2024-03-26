@@ -70,3 +70,14 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employees:
             print(f'emp name --> {emp.fullname}')
+
+emp1 = Employee('vinay', 'kumar', 500,
+                'Virtusa')
+emp2 = Employee('spoorthi', 'nu', 400,
+                'Cognizant')
+dev1 = Developer('sharan', 'gs', 700,
+                 'virtusa', 'Javascript')
+dev2 = Developer('swaroop', 'nu', 800,
+                 'virtusa', 'Python')
+manager1 = Manager('srinivas', 'muddulur', 900,
+                   'virtusa', [])
