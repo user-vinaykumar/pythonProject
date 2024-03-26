@@ -17,3 +17,6 @@ class Employee:
         first, last, pay, company = item.split(' ')
         return cls(first, last, pay, company)
 
+    def fullname(self):
+        return f'full name of the employee : {self.firstname} {self.lastname}'
+
