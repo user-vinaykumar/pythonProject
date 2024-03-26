@@ -27,3 +27,7 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    @property
+    def email(self):
+        return f'{self.fullname}@{self.company}.com'
+
