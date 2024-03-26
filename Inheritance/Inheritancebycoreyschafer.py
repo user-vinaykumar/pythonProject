@@ -34,3 +34,6 @@ class Employee:
     def __repr__(self):
         return f'{self.firstname} {self.pay}'
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
