@@ -31,3 +31,6 @@ class Employee:
     def email(self):
         return f'{self.fullname}@{self.company}.com'
 
+    def __repr__(self):
+        return f'{self.firstname} {self.pay}'
+
