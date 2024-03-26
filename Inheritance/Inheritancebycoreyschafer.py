@@ -88,3 +88,16 @@ manager1 = Manager('srinivas', 'muddulur', 900,
 print(emp1.raise_amount)
 print(emp1.pay)
 emp1.set_raise_amount(1.5)
+emp1.apply_raise()
+print(emp1.pay)
+
+emp1.fullname = 'vinay gs'
+print(emp1.fullname)
+print(emp1.email)
+manager1.add_emp(dev2)
+manager1.add_emp(dev1)
+manager1.add_emp(emp2)
+manager1.print_emp()
+manager1.remove_emp(dev1)
+print(f'------------')
+manager1.print_emp()
