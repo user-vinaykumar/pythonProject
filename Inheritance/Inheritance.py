@@ -25,3 +25,7 @@ class Employee:
     def fullname(self):
         return f'Full name of the Employee : {self.firstname} {self.lastname}'
 
+    def email(self):
+        return (f'email of the employee is : {self.firstname}.{self.lastname}'
+                f'@{self.company}.com')
+
