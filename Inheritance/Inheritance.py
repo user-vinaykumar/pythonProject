@@ -77,3 +77,6 @@ class Manager(Employee):
         for emp in self.employees:
             print(f'--> {emp.fullname}')
 
+item1 = 'vinay kumar 700 virtusa'
+item2 = Employee.emp_instance(item1)
+print(item2.fullname)
