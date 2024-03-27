@@ -14,3 +14,8 @@ class Employee:
     def set_raise_amount(cls, amount):
         cls.raise_amount = amount
 
+    @classmethod
+    def emp_instance(cls, item):
+        first, last, pay, company = item.split(' ')
+        return cls(first, last, pay, company)
+
