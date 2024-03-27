@@ -22,6 +22,7 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+    @property
     def fullname(self):
         return f'Full name of the Employee : {self.firstname} {self.lastname}'
 
