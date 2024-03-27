@@ -31,3 +31,8 @@ class Employee:
         return (f'email of the employee is : {self.firstname}.{self.lastname}'
                 f'@{self.company}.com')
 
+    @fullname.setter
+    def fullname(self, name):
+        first, last = name.split(' ')
+        self.firstname = first
+        self.lastname = last
