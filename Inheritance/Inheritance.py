@@ -20,7 +20,7 @@ class Employee:
         return cls(first, last, pay, company)
 
     def apply_raise(self):
-        self.pay = int(self.pay * self.raise_amount)
+        self.pay = int(float(self.pay) *float(self.raise_amount))
 
     @property
     def fullname(self):
@@ -80,3 +80,9 @@ class Manager(Employee):
 item1 = 'vinay kumar 700 virtusa'
 item2 = Employee.emp_instance(item1)
 print(item2.fullname)
+print(item2.raise_amount)
+print(item2.pay)
+item2.raise_amount = 3.0
+item2.apply_raise()
+print(item2.pay)
+print(item2.raise_amount)
