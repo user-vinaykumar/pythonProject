@@ -19,3 +19,6 @@ class Employee:
         first, last, pay, company = item.split(' ')
         return cls(first, last, pay, company)
 
+    def apply_raise(self):
+        self.pay = int(self.pay * self.raise_amount)
+
