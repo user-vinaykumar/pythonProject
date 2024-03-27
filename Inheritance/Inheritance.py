@@ -45,3 +45,10 @@ class Employee:
 
     def __add__(self, other):
         return f'{self.pay + other.pay}'
+
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, prog_lang):
+        super().__init__(firstname, lastname, pay, company)
+        self.prog_lang = prog_lang
+
