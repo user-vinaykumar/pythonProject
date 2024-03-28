@@ -49,3 +49,8 @@ class Developer(Employee):
         super().__init__(firstname, las, pay, comp)
         self.prog = prog
 
+dev1 = Developer('vinay', 'kumar', 800, 'abc', 'python')
+
+print(dev1.pay)
+print(dev1.last)
+print(dev1.company)
