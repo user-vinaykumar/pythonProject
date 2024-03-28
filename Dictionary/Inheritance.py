@@ -51,6 +51,12 @@ class Developer(Employee):
 
 dev1 = Developer('vinay', 'kumar', 800, 'abc', 'python')
 
-print(dev1.pay)
-print(dev1.last)
-print(dev1.company)
+class Manager(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, employees=None):
+        super().__init__(firstname, lastname, pay, company)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+
