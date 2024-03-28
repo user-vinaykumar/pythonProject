@@ -66,3 +66,9 @@ class Manager(Employee):
         else:
             pass
 
+    def remove_emp(self, emp):
+        if emp in self.employees:
+            list.remove(emp)
+        else:
+            pass
+
