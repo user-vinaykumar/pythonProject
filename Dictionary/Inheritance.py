@@ -1,0 +1,10 @@
+class Employee:
+
+    def __init__(self, firstname, lastname, pay, company):
+        self.firstname = firstname
+        self.last = lastname
+        self.pay = pay
+        self.company = company
+
+    raise_amount = 1.10
+
