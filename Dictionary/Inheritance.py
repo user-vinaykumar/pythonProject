@@ -31,3 +31,6 @@ class Employee:
         firs, las, pa, com = item.split(' ')
         return cls(firs, las, pa, com)
 
+    def apply_raise(self):
+        self.pay = int(float(self.pay) * float(self.raise_amount))
+
