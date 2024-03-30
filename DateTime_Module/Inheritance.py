@@ -36,3 +36,7 @@ class Employee:
 
     def __repr__(self):
         return f'{self.fullname}'
+
+    def __str__(self):
+        return f'{self.email}'
+
