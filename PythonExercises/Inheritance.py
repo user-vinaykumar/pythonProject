@@ -54,3 +54,8 @@ class Employee:
     @property
     def workcompany(self):
         return self.company
+
+    @workcompany.setter
+    def workcompany(self, com):
+        self.company = com
+
