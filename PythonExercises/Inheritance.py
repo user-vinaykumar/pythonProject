@@ -51,3 +51,6 @@ class Employee:
     def payslip(self, sal):
         self.pay = sal
 
+    @property
+    def workcompany(self):
+        return self.company
