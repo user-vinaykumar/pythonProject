@@ -43,21 +43,22 @@ class Employee:
     def __str__(self):
         return self.email
 
-    @property
-    def pay(self):
-        return self.pay
+    # @property
+    # def pay(self):
+    #     return self.pay
+    #
+    # @pay.setter
+    # def pay(self, sal):
+    #     salary = float(sal)
+    #     self.pay = salary
 
-    @pay.setter
-    def pay(self, sal):
-        self.pay = sal
-
-    @property
-    def company(self):
-        return self.company
-
-    @company.setter
-    def company(self, com):
-        self.company = com
+    # @property
+    # def company(self):
+    #     return self.company
+    #
+    # @company.setter
+    # def company(self, com):
+    #     self.company = com
 
 
 class Developer(Employee):
@@ -66,13 +67,14 @@ class Developer(Employee):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
 
-    @property
-    def proglang(self):
-        return self.proglang
-
-    @proglang.setter
-    def proglang(self, lang):
-        self.proglang = lang
+    # @property
+    # def proglang(self):
+    #     return self.proglang
+    #
+    # @proglang.setter
+    # def proglang(self, lang):
+    #     codelang = str(lang)
+    #     self.proglang = codelang
 
 
 class Manager(Employee):
@@ -99,3 +101,8 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employees:
             print(f'--> {emp.fullname}')
+
+dev1 = Developer('vinay', 'kumar',
+                 800, 'virtusa', 'python')
+dev1.proglang = 'java'
+print(dev1.proglang)
