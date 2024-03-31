@@ -44,19 +44,19 @@ class Employee:
         return self.email
 
     @property
-    def payslip(self):
+    def pay(self):
         return self.pay
 
-    @payslip.setter
-    def payslip(self, sal):
+    @pay.setter
+    def pay(self, sal):
         self.pay = sal
 
     @property
-    def workcompany(self):
+    def company(self):
         return self.company
 
-    @workcompany.setter
-    def workcompany(self, com):
+    @company.setter
+    def company(self, com):
         self.company = com
 
 class Developer(Employee):
