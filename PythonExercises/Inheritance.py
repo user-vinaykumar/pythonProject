@@ -69,6 +69,11 @@ class Developer(Employee):
     def proglang(self):
         return self.proglang
 
+    @proglang.setter
+    def proglang(self, lang):
+        self.proglang = lang
+
+
 
 class Manager(Employee):
 
