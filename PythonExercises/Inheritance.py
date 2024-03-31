@@ -47,3 +47,7 @@ class Employee:
     def payslip(self):
         return self.pay
 
+    @payslip.setter
+    def payslip(self, sal):
+        self.pay = sal
+
