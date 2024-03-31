@@ -59,3 +59,9 @@ class Employee:
     def workcompany(self, com):
         self.company = com
 
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, proglang):
+        super().__init__(firstname, lastname, pay, company)
+        self.proglang = proglang
+
