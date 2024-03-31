@@ -65,6 +65,11 @@ class Developer(Employee):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
 
+    @property
+    def proglang(self):
+        return self.proglang
+
+
 class Manager(Employee):
 
     def __init__(self, firstname, lastname, pay, company, employees=None):
