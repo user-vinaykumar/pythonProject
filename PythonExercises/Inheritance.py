@@ -59,6 +59,7 @@ class Employee:
     def company(self, com):
         self.company = com
 
+
 class Developer(Employee):
 
     def __init__(self, firstname, lastname, pay, company, proglang):
@@ -72,7 +73,6 @@ class Developer(Employee):
     @proglang.setter
     def proglang(self, lang):
         self.proglang = lang
-
 
 
 class Manager(Employee):
