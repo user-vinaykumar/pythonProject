@@ -34,3 +34,6 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    def __repr__(self):
+        return f'{self.fullname}'
+
