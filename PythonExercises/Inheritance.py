@@ -43,3 +43,7 @@ class Employee:
     def __str__(self):
         return self.email
 
+    @property
+    def payslip(self):
+        return self.pay
+
