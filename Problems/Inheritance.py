@@ -72,5 +72,5 @@ class Manager(Employee):
 
     def print_emp(self):
         for emp in self.employeelist:
-            print(f'{Employee.fullname}')
+            print(f'{emp.fullname}')
 
