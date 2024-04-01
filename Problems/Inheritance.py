@@ -60,7 +60,7 @@ class Manager(Employee):
 
     def add_emp(self, emp):
         if emp not in self.employeelist:
-            list.append(emp)
+            self.employeelist.append(emp)
         else:
             pass
 
