@@ -22,7 +22,7 @@ class Employee:
 
     raise_amount = 1.10
 
-    # def apply_raise(self):
-    #     self.pay = int(float(self.pay) * float(self.raise_amount))
+    def apply_raise(self):
+        self.pay = int(float(self.pay) * float(self.raise_amount))
 
 
