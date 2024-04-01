@@ -34,4 +34,6 @@ class Employee:
         first, last, pay, comp = item.split(' ')
         return cls(first, last, pay, comp)
 
+    def __repr__(self):
+        return f'{self.fullname}'
 
