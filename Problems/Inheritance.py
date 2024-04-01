@@ -42,3 +42,9 @@ class Employee:
 
     def __str__(self):
         return f'{self.email}'
+
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, proglang):
+        super().__init__(firstname, lastname, pay, company)
+        self.proglang = proglang
