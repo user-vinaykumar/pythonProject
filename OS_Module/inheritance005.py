@@ -8,5 +8,9 @@ class Employee:
 
     raise_amount = 1.10
 
+    @classmethod
+    def set_raise_amount(cls, amount):
+        cls.raise_amount = amount
+
 
 
