@@ -6,5 +6,7 @@ class Employee:
         self.pay = pay
         self.company = company
 
+    raise_amount = 1.10
+
 
 
