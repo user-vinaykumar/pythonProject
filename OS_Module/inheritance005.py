@@ -64,3 +64,7 @@ class Manager(Employee):
         else:
             pass
 
+
+    def print_emp(self):
+        for emp in self.employeelist:
+            print(f'--> {Employee.fullname} --- {Employee.email}')
