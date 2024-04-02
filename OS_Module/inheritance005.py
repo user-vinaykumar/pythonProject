@@ -37,4 +37,7 @@ class Employee:
     def __repr__(self):
         return self.fullname
 
+    def __str__(self):
+        return self.email
+
 
