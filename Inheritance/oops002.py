@@ -51,13 +51,13 @@ class Manager(Employee):
 
     def add_emp(self, emp):
         if emp not in self.employeeslist:
-            list.append(emp)
+            self.employeeslist.append(emp)
         else:
             pass
 
     def remove_emp(self, emp):
         if emp in self.employeeslist:
-            list.remove(emp)
+            self.employeeslist.remove(emp)
         else:
             pass
 
