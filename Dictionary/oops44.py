@@ -34,3 +34,7 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_amount))
 
+    def __repr__(self):
+        return f'{self.fullname}'
+
+
