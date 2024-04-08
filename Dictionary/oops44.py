@@ -39,3 +39,8 @@ class Employee:
 
     def __str__(self):
         return f'{self.email}'
+
+    def __add__(self, other):
+        return self.pay + other.pay
+
+
