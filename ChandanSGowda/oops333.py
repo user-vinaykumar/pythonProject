@@ -22,3 +22,7 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    @classmethod
+    def set_raise_amount(cls, amount):
+        cls.raise_amount = amount
+
