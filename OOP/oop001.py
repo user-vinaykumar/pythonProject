@@ -19,3 +19,7 @@ class Employee:
 
     def apply_percentage_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_percent))
+
+    def fullname(self):
+        return f'{self.firstname} {self.lastname}'
+
