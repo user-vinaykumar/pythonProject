@@ -19,4 +19,3 @@ class Employee:
 
     def apply_percentage_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_percent))
-
