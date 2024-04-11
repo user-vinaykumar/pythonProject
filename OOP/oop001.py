@@ -17,3 +17,6 @@ class Employee:
         first, last, pay, company = item.split(' ')
         return cls(first, last, pay, company)
 
+    def apply_percentage_raise(self):
+        self.pay = int(float(self.pay) * float(self.raise_percent))
+
