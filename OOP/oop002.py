@@ -22,5 +22,11 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    @classmethod
+    def set_raise_percent(cls, percent):
+        cls.raise_percent = percent
+
+
+
 
 
