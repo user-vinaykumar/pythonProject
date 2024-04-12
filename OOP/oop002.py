@@ -43,6 +43,11 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_percent))
 
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, proglang):
+        super().__init__(firstname, lastname, pay, company)
+        self.proglang = proglang
 
 
 
