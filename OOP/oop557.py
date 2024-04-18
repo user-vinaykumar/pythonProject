@@ -31,5 +31,8 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    def apply_raise(self):
+        self.pay = int(float(self.pay) * float(self.raise_percent))
+
 
 
