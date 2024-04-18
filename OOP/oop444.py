@@ -17,6 +17,7 @@ class Employee:
         first, last, pay, comp = item.split(' ')
         return cls(first, last, pay, comp)
 
+    @property
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
 
