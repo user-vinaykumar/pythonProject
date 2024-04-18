@@ -43,4 +43,10 @@ class Employee:
     def __repr__(self):
         return f'{self.fullname}'
 
+class Developer(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, proglang):
+        super().__init__(firstname, lastname, pay, company)
+        self.proglang = proglang
+
 
