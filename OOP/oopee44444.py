@@ -17,3 +17,6 @@ class Employee:
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.company}.com'
 
+    def apply_raise(self):
+        self.pay = int(float(self.pay) * float(self.pay))
+
