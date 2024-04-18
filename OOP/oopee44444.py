@@ -20,3 +20,9 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.pay))
 
+    @fullname.setter
+    def fullname(self, name):
+        first, last = name.split(' ')
+        self.firstname = first
+        self.lastname = last
+
