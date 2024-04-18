@@ -8,3 +8,7 @@ class Employee:
 
     raise_percent = 1.10
 
+    @classmethod
+    def set_raise_percent(cls, percent):
+        cls.raise_percent = percent
+
