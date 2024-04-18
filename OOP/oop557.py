@@ -34,5 +34,8 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_percent))
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
 
 
