@@ -20,3 +20,6 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    raise_percent = 1.10
+
+
