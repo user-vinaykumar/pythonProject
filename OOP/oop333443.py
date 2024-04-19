@@ -26,4 +26,9 @@ class Employee:
     def set_raise_percent(cls, percent):
         cls.raise_percent = percent
 
+    @classmethod
+    def emp_instance(cls, obj):
+        first, last, pay, comp = obj.split(' ')
+        return cls(first, last, pay, comp)
+
 
