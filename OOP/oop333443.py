@@ -31,4 +31,7 @@ class Employee:
         first, last, pay, comp = obj.split(' ')
         return cls(first, last, pay, comp)
 
+    def apply_raise(self):
+        self.pay = int(float(self.pay) * float(self.raise_percent))
+
 
