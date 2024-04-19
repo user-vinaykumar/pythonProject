@@ -71,3 +71,9 @@ class Manager(Employee):
             self.employeelist.remove(emp)
         else:
             pass
+
+
+    def print_emp(self):
+        for emp in self.employeelist:
+            print(f'--> {emp.fullname}')
+
