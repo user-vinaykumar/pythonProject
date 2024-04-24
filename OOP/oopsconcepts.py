@@ -8,6 +8,7 @@ class Employee:
 
     raise_percent = 1.10
 
+    @property
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
 
