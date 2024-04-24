@@ -50,6 +50,7 @@ class Developer(Employee):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
 
+
 class Manager(Employee):
 
     def __init__(self, firstname, lastname, pay, company, employeelist=None):
@@ -58,4 +59,10 @@ class Manager(Employee):
             self.employeelist = []
         else:
             self.employeelist = employeelist
+
+    def add_emp(self, emp):
+        if emp not in self.employeelist:
+            self.employeelist.append(emp)
+        else:
+            pass
 
