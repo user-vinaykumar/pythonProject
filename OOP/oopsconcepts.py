@@ -25,3 +25,7 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_percent))
 
+    @classmethod
+    def set_raise_percent(cls, percent):
+        cls.raise_percent = percent
+
