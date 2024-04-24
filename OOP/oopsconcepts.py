@@ -6,3 +6,5 @@ class Employee:
         self.pay = pay
         self.compnay = company
 
+    raise_percent = 1.10
+
