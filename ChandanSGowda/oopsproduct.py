@@ -40,5 +40,8 @@ class Employee:
     def __str__(self):
         return self.email
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
 
 
