@@ -40,4 +40,7 @@ class Employee:
     def __str__(self):
         return self.fullname
 
+    def __add__(self, other):
+        return self.pay + other.pay
+
 
