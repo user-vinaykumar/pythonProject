@@ -25,3 +25,7 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.pay))
 
+    @classmethod
+    def set_raise_amount(cls, amount):
+        cls.raise_amount = amount
+
