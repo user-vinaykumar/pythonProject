@@ -35,3 +35,12 @@ class Employee:
     def apply_raise(self):
         self.pay = int(float(self.pay) * float(self.raise_amount))
 
+    def __repr__(self):
+        return self.fullname
+
+    def __str__(self):
+        return self.email
+
+    def __add__(self, other):
+        return self.pay + other.pay
+
