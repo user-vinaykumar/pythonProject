@@ -7,10 +7,11 @@ class Employee:
         self.compnay = company
 
 
-
+    @property
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
 
+    @property
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.compnay}.com'
 
