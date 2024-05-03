@@ -21,3 +21,5 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
+    raise_amount = 1.10
+
