@@ -6,7 +6,6 @@ class Employee:
         self.pay = pay
         self.compnay = company
 
-
     @property
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
@@ -44,11 +43,13 @@ class Employee:
     def __add__(self, other):
         return self.pay + other.pay
 
+
 class Developer(Employee):
 
     def __init__(self, firstname, lastname, pay, company, proglang):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
+
 
 class Manager(Employee):
 
@@ -74,4 +75,3 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employeelist:
             print(f'--> {emp.fullname}')
-
