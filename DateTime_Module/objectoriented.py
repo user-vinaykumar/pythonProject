@@ -50,6 +50,7 @@ class Developer(Employee):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
 
+
 class Manager(Employee):
 
     def __init__(self, firstname, lastname, pay, company, employeelist=None):
@@ -74,4 +75,3 @@ class Manager(Employee):
     def print_emp(self):
         for emp in self.employeelist:
             print(f'--> {emp.fullname}')
-
