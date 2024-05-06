@@ -52,4 +52,19 @@ class Batsman(Players):
         super().__init__(firstname, lastname, country, package, handed, team)
         self.language = language
 
+class Coach(Players):
+
+    def __init__(self, firstname, lastname, country, package, handed, team, playerlist=None):
+        super().__init__(firstname, lastname, country, package, handed, team)
+        if playerlist is None:
+            self.playerlist = []
+        else:
+            self.playerlist = playerlist
+
+    def add_players(self, member):
+        if member not in self.playerlist:
+            self.playerlist.append(member)
+        else:
+            pass
+
 
