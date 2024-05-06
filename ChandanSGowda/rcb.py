@@ -7,7 +7,7 @@ class RoyalChallengersBengaluru():
         self.package = package
         self.handed = handed
 
-
+    @property
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
 
