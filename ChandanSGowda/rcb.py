@@ -8,3 +8,6 @@ class RoyalChallengersBengaluru():
         self.handed = handed
 
 
+    def fullname(self):
+        return f'{self.firstname} {self.lastname}'
+
