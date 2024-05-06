@@ -34,3 +34,6 @@ class Players():
         first, last, country, pack, hand, team = item.split(' ')
         return cls(first, last, country, pack, hand, team)
 
+    def apply_raise(self):
+        self.package = int(float(self.package) * float(self.raise_package_amount))
+
