@@ -8,7 +8,6 @@ class Players():
         self.handed = handed
         self.team = team
 
-
     @property
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
@@ -46,11 +45,13 @@ class Players():
     def __add__(self, other):
         return self.package + other.package
 
+
 class Batsman(Players):
 
     def __init__(self, firstname, lastname, country, package, handed, team, language):
         super().__init__(firstname, lastname, country, package, handed, team)
         self.language = language
+
 
 class Coach(Players):
 
@@ -73,9 +74,6 @@ class Coach(Players):
         else:
             pass
 
-
     def print_players(self):
         for players in self.playerlist:
             print(f'--> {players.fullname}')
-
-
