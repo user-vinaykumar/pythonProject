@@ -17,3 +17,9 @@ class Players():
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.team}.com'
 
+    @fullname.setter
+    def fullname(self, name):
+        first, last = name.split(' ')
+        self.firstname = first
+        self.lastname = last
+
