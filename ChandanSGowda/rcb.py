@@ -37,3 +37,12 @@ class Players():
     def apply_raise(self):
         self.package = int(float(self.package) * float(self.raise_package_amount))
 
+    def __repr__(self):
+        return self.fullname
+
+    def __str__(self):
+        return self.package
+
+    def __add__(self, other):
+        return self.package + other.package
+
