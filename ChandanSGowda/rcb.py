@@ -67,4 +67,10 @@ class Coach(Players):
         else:
             pass
 
+    def remove_players(self, member):
+        if member in self.playerlist:
+            self.playerlist.remove(member)
+        else:
+            pass
+
 
