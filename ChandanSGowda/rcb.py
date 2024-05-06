@@ -74,3 +74,8 @@ class Coach(Players):
             pass
 
 
+    def print_players(self):
+        for players in self.playerlist:
+            print(f'--> {players.fullname}')
+
+
