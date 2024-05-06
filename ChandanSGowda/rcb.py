@@ -46,3 +46,6 @@ class Players():
     def __add__(self, other):
         return self.package + other.package
 
+class Batsman(Players):
+
+    def __init__(self, firstname, lastname, country, package, handed, team):
