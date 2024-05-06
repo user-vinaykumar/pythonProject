@@ -48,4 +48,8 @@ class Players():
 
 class Batsman(Players):
 
-    def __init__(self, firstname, lastname, country, package, handed, team):
+    def __init__(self, firstname, lastname, country, package, handed, team, language):
+        super().__init__(firstname, lastname, country, package, handed, team)
+        self.language = language
+
+
