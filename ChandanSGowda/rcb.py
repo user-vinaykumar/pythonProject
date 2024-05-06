@@ -29,3 +29,8 @@ class Players():
     def set_raise_amount(cls, amount):
         cls.raise_package_amount = amount
 
+    @classmethod
+    def emp_instance(cls, item):
+        first, last, country, pack, hand, team = item.split(' ')
+        return cls(first, last, country, pack, hand, team)
+
