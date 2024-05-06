@@ -13,7 +13,7 @@ class Players():
     def fullname(self):
         return f'{self.firstname} {self.lastname}'
 
-
+    @property
     def email(self):
         return f'{self.firstname}.{self.lastname}@{self.team}.com'
 
