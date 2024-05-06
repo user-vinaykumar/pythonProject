@@ -25,3 +25,7 @@ class Players():
 
     raise_package_amount = 1.10
 
+    @classmethod
+    def set_raise_amount(cls, amount):
+        cls.raise_package_amount = amount
+
