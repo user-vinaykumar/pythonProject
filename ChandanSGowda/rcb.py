@@ -23,3 +23,5 @@ class Players():
         self.firstname = first
         self.lastname = last
 
+    raise_package_amount = 1.10
+
