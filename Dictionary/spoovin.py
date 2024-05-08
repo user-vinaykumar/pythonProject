@@ -20,8 +20,7 @@ class Employee:
         self.firstname = first
         self.lastname = last
 
-
-    raise_amount =1.10
+    raise_amount = 1.10
 
     @classmethod
     def set_raise_amount(cls, amount):
@@ -44,11 +43,13 @@ class Employee:
     def __add__(self, other):
         return self.pay + other.pay
 
+
 class Developer(Employee):
 
     def __init__(self, firstname, lastname, pay, company, proglang):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
+
 
 class Manager(Employee):
 
