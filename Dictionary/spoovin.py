@@ -32,3 +32,9 @@ class Employee:
         first, last, pay, comp = item.split(' ')
         return cls(first, last, pay, comp)
 
+    def apply_raise(self):
+        self.pay = int(float(self.pay) * float(self.raise_amount))
+
+    def __repr__(self):
+        return self.email
+
