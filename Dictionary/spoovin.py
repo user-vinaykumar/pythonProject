@@ -7,3 +7,6 @@ class Employee:
         self.company = company
 
 
+    def fullname(self):
+        return f'{self.firstname} {self.lastname}'
+
