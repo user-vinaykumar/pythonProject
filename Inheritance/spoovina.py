@@ -50,3 +50,15 @@ class Developer(Employee):
         super().__init__(firstname, lastname, pay, company)
         self.proglang = proglang
 
+
+class Manager(Employee):
+
+    def __init__(self, firstname, lastname, pay, company, employeelist=None):
+        super().__init__(firstname, lastname, pay, company)
+        if employeelist is None:
+            self.employeelist.append(emp)
+        else:
+            self.employeelist = employeelist
+
+
+
